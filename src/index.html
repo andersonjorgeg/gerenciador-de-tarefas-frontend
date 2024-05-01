@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+    <!-- Incluindo Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <div class="container mx-auto px-4">
+        <h1 class="text-xl font-bold text-center my-6">Lista de Tarefas</h1>
+        <form id="add-task-form" class="mb-4">
+            <input id="task-input" type="text" placeholder="Adicione uma nova tarefa" class="border-2 border-gray-300 p-2 rounded-lg w-full mb-4">
+            <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded-lg">Adicionar</button>
+        </form>
+        <ul id="tasks-list" class="space-y-2">
+            <!-- As tarefas serão inseridas aqui pelo back-end -->
+        </ul>
+    </div>
+
+    <script type="module" src="tasks-manager.js"></script>
+    <script type="module" src="dom-manipulation.js"></script>
+</body>
+</html>
